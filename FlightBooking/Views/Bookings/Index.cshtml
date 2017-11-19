@@ -1,0 +1,44 @@
+﻿@model IEnumerable<FlightBooking.Models.Booking>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Booking Detail</h2>
+<p>
+    <a asp-controller="Flights" asp-action="Search">New Booking</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passenger)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.FlightID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passenger.Name)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.BookingID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

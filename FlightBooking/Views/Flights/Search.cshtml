@@ -1,0 +1,58 @@
+﻿@model IEnumerable<FlightBooking.Models.Flight>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search</h2>
+
+<form asp-action="Search" method="get">
+    <div class="form-action no-color">
+        <p>
+            Destination: <input type="text" name="originString" value="@ViewData["OriginFilter"]" />
+            Departure: <input type="text" name="departureString" value="@ViewData["DepartureFilter"]" />
+            Date: <input type="date" name="departureDate" value="@ViewData["DateFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" />
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Departure)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Destination)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FHour)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FHour)
+            </td>
+            <td>
+                <a asp-controller="Bookings" asp-action="Create" asp-route-flightId="@item.FlightID">Book</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

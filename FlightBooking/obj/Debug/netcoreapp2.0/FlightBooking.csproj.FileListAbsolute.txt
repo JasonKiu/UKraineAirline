@@ -1,0 +1,12 @@
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\bin\Debug\netcoreapp2.0\FlightBooking.deps.json
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\bin\Debug\netcoreapp2.0\FlightBooking.runtimeconfig.json
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\bin\Debug\netcoreapp2.0\FlightBooking.runtimeconfig.dev.json
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\bin\Debug\netcoreapp2.0\FlightBooking.dll
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\bin\Debug\netcoreapp2.0\FlightBooking.pdb
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.csprojResolveAssemblyReference.cache
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.AssemblyInfo.cs
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.dll
+C:\Users\Asus\source\repos\FlightBooking\FlightBooking\obj\Debug\netcoreapp2.0\FlightBooking.pdb
